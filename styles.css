@@ -262,4 +262,8 @@ footer {
         flex: 1; /* Take up equal space in a row on larger screens */
         margin-right: 20px; /* Add spacing between sections */
     }
+
+    #map {
+        max-width: fit-content;
+    }
 }
