@@ -1,0 +1,265 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 114px 0 0 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to full width */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.introduction-section {
+    background: url('bg.png') center/cover no-repeat; /* Replace 'background-image.jpg' with your image */
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    flex: 1; /* Take up remaining vertical space */
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content h2 {
+    margin-bottom: 0;
+    font-size: 1.9rem;
+}
+
+.content h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.services-section {
+    padding: 8% 0 10%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.services-flex {
+    display: flex; /* Make the services section a flex container */
+    justify-content: center; /* Center the service boxes horizontally */
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    flex: 1; /* Distribute available space equally among service boxes */
+    max-width: 400px;
+    margin: 0 10px; /* Add margin around each service box */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.filler {
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonials-section {
+    background-color: #fff;
+    padding: 8% 0 10%;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    max-width: 400px; /* Adjust maximum width as needed */
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-style: italic;
+}
+.testimonial-company {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 40px ;
+    margin: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    margin: 40px;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333232;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.footer-section {
+    max-width: 400px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+}
+
+.footer-section a {
+    color: #fff;
+}
+
+.footer-section #map {
+    height: 150px; /* Adjust the height of the map container */
+    background-color: #ddd; /* Placeholder background color for the map */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        text-align: center;
+    }
+
+    .introduction-section {
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .services-section {
+        padding: 20px 0;
+    }
+
+    .services-flex {
+        flex-direction: column; /* Stack service boxes vertically on smaller screens */
+        align-items: center;
+    }
+
+    .service-box {
+        margin: 0 0 20px; /* Add margin between vertically stacked service boxes */
+    }
+    
+    .testimonials-container {
+        flex-direction: column; /* Stack testimonials vertically on smaller screens */
+    }
+
+    .testimonial {
+        align-items: center;
+        padding: 20px;
+        margin: 0 0 20px; /* Add margin between stacked testimonials */
+    }  
+    
+    .testimonials-section {
+        text-align: center; /* Center align text within the testimonials section */
+    }
+    
+    .testimonial {
+        max-width: 600px;
+        margin: 0 auto; /* Center the testimonials by setting left and right margin to auto */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Display sections in a row on larger screens */
+        justify-content: center;
+    }
+
+    .footer-section {
+        flex: 1; /* Take up equal space in a row on larger screens */
+        margin-right: 20px; /* Add spacing between sections */
+    }
+}
